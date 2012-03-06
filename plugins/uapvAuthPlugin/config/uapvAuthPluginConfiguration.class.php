@@ -10,10 +10,29 @@
  */
 class uapvAuthPluginConfiguration extends sfPluginConfiguration
 {
+  public function setup() // loads handler if needed
+  {
+
+    if ($this->configuration instanceof sfApplicationConfiguration)
+    {
+      $configCache = $this->configuration->getConfigCache();
+      $configCache->registerConfigHandler('config/parameters.yml', 'sfDefineEnvironmentConfigHandler',
+        array('prefix' => 'parameters_'));
+      $configCache->checkConfig('config/parameters.yml');
+    }
+}
+
+
+
   /**
    * @see sfPluginConfiguration
    */
   public function initialize()
   {
+    if ($this->configuration instanceof sfApplicationConfiguration)
+    {
+      $configCache = $this->configuration->getConfigCache();
+      include($configCache->checkConfig('config/parameters.yml'));
+    }
   }
 }

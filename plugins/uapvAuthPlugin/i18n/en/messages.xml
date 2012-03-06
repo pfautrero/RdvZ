@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="FR" target-language="en" datatype="plaintext" original="messages" date="2010-04-22T15:28:47Z" product-name="messages" xml:space="default">
+    <header/>
+    <body>
+      <trans-unit id="1" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>mot de passe oublié</source>
+        <target state=":final" xml:lang="en">I forgot my password</target>
+      </trans-unit>
+      <trans-unit id="2" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>Créer le compte</source>
+        <target state=":final" xml:lang="en">Create account</target>
+      </trans-unit>
+      <trans-unit id="3" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>Se connecter</source>
+        <target state=":final" xml:lang="en">Connexion</target>
+      </trans-unit>
+      <trans-unit id="4" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>Saisissez votre adresse mail : </source>
+        <target state=":final" xml:lang="en">Enter your email : </target>
+      </trans-unit>
+      <trans-unit id="5" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>Créer un compte</source>
+        <target state=":final" xml:lang="en">Create new account</target>
+      </trans-unit>
+      <trans-unit id="6" translate="yes" reformat="yes" xml:space="default" approved="yes">
+        <source>envoyer</source>
+        <target state=":final" xml:lang="en">send</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
