@@ -170,10 +170,10 @@ class uapvDB
   public function addUserInDB($login, $firstname, $lastname, $email)
   {
     $this->connect() ;
-    $login = addslashes($login);
-    $firstname = addslashes($firstname);
-    $lastname = addslashes($lastname);
-    $email = addslashes($email);
+    $login = utf8_decode(addslashes($login));
+    $firstname = utf8_decode(addslashes($firstname));
+    $lastname = utf8_decode(addslashes($lastname));
+    $email = utf8_decode(addslashes($email));
 
     $crypt = $this->config['pass_crypt'] ;
     $pass=$this->generatePassword();
